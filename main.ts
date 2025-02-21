@@ -4,8 +4,7 @@ namespace MyMemberKind {
     
     export function create() {
         if (!(kindid)) kindid = 0
-        kindid++
-        return kindid
+        return kindid++
     }
 
     export const myMember = create()
@@ -23,8 +22,6 @@ namespace MyKinds {
     //%block="$arg"
     //%kindNamespace=MyMemberKind 
     //%kindPromptHint="enter your member here"
-    export function getKind(arg: number) {
-        return arg
-    }
+    export function getKind(arg: number) { return arg }
 
 }
