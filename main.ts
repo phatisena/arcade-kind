@@ -11,10 +11,13 @@ namespace MyMemberKind {
         return nid;
     }
 
+    export const myMember = create()
+
 }
 
 //%block="my kind"
-//%color="#dbb62e"
+//%color="#f7d84d"
+//%icon="\uf02e"
 namespace MyKinds {
 
     //%shim=KIND_GET
