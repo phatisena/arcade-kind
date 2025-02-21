@@ -15,15 +15,16 @@ namespace MyMemberKind {
 
 //%block="my kind"
 //%color="#dbb62e"
-//%icon="\u23"
 namespace MyKinds {
 
-    //%shim=KIND_GET kindMemberName=myMember block="$kindID"
+    //%shim=KIND_GET
+    //%kindMemberName=myMember
     //%blockId=MyKinds_kind_get
+    //%block="$arg"
     //%kindNamespace=MyMemberKind 
-    //%kindPromptHint="e.g. enter your member here"
-    export function getKind(kindID: number) {
-        return kindID
+    //%kindPromptHint="enter your member here"
+    export function getKind(arg: number) {
+        return arg
     }
 
 }
