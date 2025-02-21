@@ -1,14 +1,11 @@
 namespace MyMemberKind {
 
-    let nid: number;
+    let kindid: number;
     
     export function create() {
-        if (!(nid)) {
-            nid = 0;
-            return nid
-        };
-        nid++;
-        return nid;
+        if (!(kindid)) kindid = 0
+        kindid++
+        return kindid
     }
 
     export const myMember = create()
@@ -21,7 +18,7 @@ namespace MyMemberKind {
 namespace MyKinds {
 
     //%shim=KIND_GET
-    //%kindMemberName=myMember
+    //%kindMemberName=Member
     //%blockId=MyKinds_kind_get
     //%block="$arg"
     //%kindNamespace=MyMemberKind 
