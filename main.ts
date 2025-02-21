@@ -7,6 +7,7 @@ namespace MyMemberKind {
         return kindid++
     }
 
+    //%isKind
     export const myMember = create()
 
 }
